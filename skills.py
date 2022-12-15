@@ -136,7 +136,7 @@ def time():
 # ПОГОДА
 def weather():#https://openweathermap.org для показывания погоды
     try:
-        params = {'q': 'Moscow', 'units': 'metric', 'lang': 'ru', 'appid': '0d27a922b606c2a322cc9c171958cdbb'}
+        params = {'q': 'Moscow', 'units': 'metric', 'lang': 'ru', 'appid': 'ваш токен'}
         response = requests.get(f'https://api.openweathermap.org/data/2.5/weather', params=params)
         if not response:
             raise
